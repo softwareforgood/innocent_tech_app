@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setting up the app
+##### Prerequisites
 
-Things you may want to cover:
+- [Ruby](https://ruby-doc.org/) (see [.ruby-version](./.ruby-version) for the version used for this app)
+- [bundler](https://bundler.io/) — `gem install bundler`
 
-* Ruby version
+##### Running locally
 
-* System dependencies
+Clone the app from GitHub to your machine. 
+Then run the following commands to create and setup the app locally.
 
-* Configuration
+```bash
+bundle install
+rails db:setup
+```
 
-* Database creation
+##### Start the Rails server
 
-* Database initialization
+You can start the rails server using the command given below and visit the site with the URL http://localhost:3000
 
-* How to run the test suite
+```ruby
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+##### Open a Rails console
 
-* Deployment instructions
+```ruby
+rails c
+```
 
-* ...
+##### Run the linter
+
+```bash
+rails rubocop
+```
+
+##### Run tests
+```bash
+rails test
+```
