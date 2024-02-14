@@ -52,6 +52,7 @@ either version manager installed, and you should install `rbenv`.
 
 _Note: if you have `rvm` installed but would like to switch to `rbenv` (recommended),
 just run the following before installing `rbenv`:_
+
 ```sh
 rvm implode
 ```
@@ -64,6 +65,7 @@ brew install rbenv
 Both `rbenv` and `rvm` will automatically try to use the version specified in a
 local `.ruby-version` file if it exists. If the version specified in `.ruby-version`
 is not installed, simply run:
+
 ```sh
 rbenv install
 ```
@@ -72,7 +74,7 @@ Or for RVM:
 rvm install
 ```
 
-#### PostgreSQL - if not using using docker
+#### PostgreSQL
 See if you have PostgreSQL:
 
 ```sh
@@ -135,9 +137,11 @@ bin/rails db:setup # runs `rake db:create db:schema:load db:seed
  The CSS Framework we will be using for this project is called TailwindCSS.
  More information on the framework can be found here: https://tailwindcss.com/
  We recommend reading up on the documentation, syntax some before beginning the first sprint. 
+ Setting up your local environment should install Tailwind for this application.
 
 #### MiniTest / How To Run Tests 
 
+For this application, we are using the testing library Minitest. 
 To run the tests:
 
 Open up a terminal
