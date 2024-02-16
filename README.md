@@ -35,7 +35,7 @@ At SFG and during the duration of this project, we will be using some technical 
 #### Figma
 We use Figma as our wireframe tool.
 The Innocent Tech wireframe can be accessed here: [link]
-For this wireframe, we are using SPRINT 6 as reference for front end changes. 
+NOTE: This is a very expansive wireframe. Feel free to explore more, but for this project, we will be using *SPRINT 6* as reference for front end changes. 
 - [ ] I received and accepted Figma wireframe invite.
 - [ ] I can access SPRINT 6 on the Figma wireframe.
 
@@ -70,6 +70,8 @@ The CSS Framework we will be using for this project is called TailwindCSS.
 More information on the framework can be found here: https://tailwindcss.com/
 We recommend reading up on the documentation, and syntax some before beginning the first sprint. 
 Setting up your local environment should install Tailwind for this application.
+
+
 
 ### Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
