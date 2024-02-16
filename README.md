@@ -1,18 +1,75 @@
 # README
 
-### Project: Innocent Tech 
+Note: *Please* read this readme carefully. 
+*Onboarding instructions and tasks are listed throughout this readme.*
+The tasks shown throughout the readme are what we (Chelsey & Edith) will need to show that your local env is setup, you can commit to the repo, *and* you have completed onboarding.
+If you need assistance with *any* step of onboarding, please reach out to Chelsey + Edith through email or on Slack. 
 
+HAPPY CODING! 
+
+### Project: Innocent Tech 
 
 For this cohort, you will be working on the educator user of an application called 'Innocent Tech.'
 Innocent Tech is a full-stack application that works to eradicate racial bias in the classroom to better support students of color. 
+There will be an Innocent Tech kick off on [event info here]
+- [ ] I received and accepted the 'Innocent Tech Kickoff' invite
 
 
-### Requirements
+### Coding Practices 
+For this apprenticeship, we will use development sprints to get the tasks completed. 
+Our sprints run for 2 weeks each, from Tuesday to the following Tuesday. 
+We will have retros the Wednesday after the sprint ends. 
+- [ ] I received and accepted calendar invites for Sprint retros
 
-Technical requirements for this project. See below for step-by-step first-time setup.
 
-Ruby, Bundler, Rails, PostgresQL, Node, Yarn[include latest versions needed]
+### Technical Requirements + Tools Overview 
+At SFG and during the duration of this project, we will be using some technical requirements and tools that most of you are familiar with, and some new tools! Read on for the new additions. :) 
 
+#### Google Suite 
+- [ ] Received and Read the SFG Handbook
+- [ ] Accepted calendar invites for 'Welcome To SFG'
+- [ ] Accepted calendar invite for Apprentice calendar
+- [ ] Set your Google Calendar settings to everyone, so all SFG staff can access your calendar
+- [ ] Upload your timesheet document to your acct Google Docs, send link to Chelsey and Edith to access 
+
+#### Figma
+We use Figma as our wireframe tool.
+The Innocent Tech wireframe can be accessed here: [link]
+For this wireframe, we are using SPRINT 6 as reference for front end changes. 
+- [ ] I received and accepted Figma wireframe invite.
+- [ ] I can access SPRINT 6 on the Figma wireframe.
+
+
+### Asana 
+We will use Asana as our kan-ban board for this project. 
+If you're not familiar with Asana, you can find more information here: https://help.asana.com/hc/en-us/articles/14250783001627-How-to-start-using-Asana 
+- [ ] I received and accepted Asana board invite. 
+- [ ] I can access the Innocent Tech MVP Asana board. 
+
+
+#### Heroku 
+We will push our changes for testing and production to Heroku. https://devcenter.heroku.com/
+For committing changes to Heroku, we recommend getting the Heroku CLI set up on your laptop. 
+Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli 
+- [ ] I received and accepted Heroku application invite.
+- [ ] I can access Innocent Tech App Heroku dashboard.
+
+
+#### Github
+- [ ] Local environment has been set up on your computer
+- [ ] Created Onboarding pull request for review. 
+- [ ] Assigned your PR to Chelsey + Edith  
+
+#### Slack 
+- [ ] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
+- [ ] Introduce yourself on the Apprentice Slack channel! Post a wave, hi, etc. to the Apprentice Slack channel. 
+
+
+#### TailwindCSS 
+The CSS Framework we will be using for this project is called TailwindCSS.
+More information on the framework can be found here: https://tailwindcss.com/
+We recommend reading up on the documentation, and syntax some before beginning the first sprint. 
+Setting up your local environment should install Tailwind for this application.
 
 ### Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
@@ -50,8 +107,13 @@ either version manager installed, and you should install `rbenv`.
 
 **DO NOT INSTALL BOTH RVM AND RBENV ON THE SAME MACHINE OR YOU WILL HAVE A VERY BAD TIME!**
 
+*Check-in: I DO NOT have RVM and RBENV installed.* 
+- [ ] Not at all! 
+- [ ] Let me double check.... 
+
 _Note: if you have `rvm` installed but would like to switch to `rbenv` (recommended),
 just run the following before installing `rbenv`:_
+
 
 ```sh
 rvm implode
@@ -95,7 +157,7 @@ Create a db user:
 psql -c "[authentication info here]';"
 ```
 
-#### Redis - if not using using docker
+#### Redis - if not using using docker 
 
 You'll need `redis` in order for `sidekiq` to work.
 
@@ -133,11 +195,9 @@ Setup DB:
 bin/rails db:setup # runs `rake db:create db:schema:load db:seed
 ```
 
-#### TailwindCSS (CSS Framework)
- The CSS Framework we will be using for this project is called TailwindCSS.
- More information on the framework can be found here: https://tailwindcss.com/
- We recommend reading up on the documentation, syntax some before beginning the first sprint. 
- Setting up your local environment should install Tailwind for this application.
+*Check-in:Verify your db is ready to go*
+- [ ] CHECK W/ EDITH ON HOW BEST TO DO THIS  
+
 
 #### MiniTest / How To Run Tests 
 
@@ -151,13 +211,15 @@ Run ruby test_file_name.rb
 Reading Minitest Output
 Minitest runs the tests in a random order, and outputs a green dot for a successful test, a red E if there was an error while running the test, and a red F if the test assertion failed.
 
+*Check-in: Are you  looking forward to writing tests?*
+- [ ] Yes, of course!
+- [ ] Its too early to tell 
+- [ ] No, not really
 
 #### Deployment Steps 
-Note: This is what we (Chelsey & Edith) will need to show that your local env is setup and you have completed onboarding.
-From main, create a new branch with the following naming format: learn-earn-onboarding/[yourname]
-Once thats created, edit the checklist on [file_name]
-
-Then, complete the next steps:
+*Please* double check you can commit to this repo. Then, follow the deployment steps listed below. 
+When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
+*You only commit your Readme file with the checklist. No other files are needed!* 
 
   --commit your work on a feature branch
   --make a PR to the main branch
@@ -165,14 +227,15 @@ Then, complete the next steps:
   --cd back to main
   --pull the latest main branch
 
+*Check-in: Do you prefer Front-End development or Back-End development?*
+- [ ] Front end 
+- [ ] Back end 
+- [ ] I'm open to either 
 
-#### Onboarding Checklist [Draft]
 
-- [ ] Repo cloned
-- [ ] All tools needed installed 
-- [ ] Create feature branch 
-- [ ] Accept Google Calendar invite for Apprenticeship program
-- [ ] Joined Slack channel -- posted on channel 
-- [ ] Joined Asana board -- assigned themselves a ticket 
-- [ ] Commit feature branch to repo
-- [ ] Create pull request for review -- sssign to edith + chelsey 
+*Final Check-in: How did local set up go?*
+
+- [ ] Double checked that *all* the onboarding tasks on this readme
+- [ ] I answered all of the check-in questions(including this one!) listed throughout this readme.
+- [ ] I'm ready to submit this readme for review! 
+
