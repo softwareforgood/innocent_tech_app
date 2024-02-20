@@ -14,8 +14,20 @@
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
       <h1 class="text-3xl font-bold underline">
-        Hello world!
+        Innocent Tech Application Page
       </h1>
+      <div class="wrapper">
+        <%= render 'layouts/header' %>
+        <div class="container" id="errors">
+          <% flash.each do |key, value| %>
+            <%= render partial: 'shared/error', locals: { key: key, value: value } %>
+          <% end %>
+        </div>
+        <div class="container main-content">
+          <%= yield %>
+        </div>
+        <%= render 'layouts/footer' %>
+      </div>
     </main>
   </body>
 </html>
