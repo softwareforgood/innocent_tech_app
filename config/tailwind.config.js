@@ -16,6 +16,10 @@ module.exports = {
   /*theme section is where you define anything related to the visual design of your site.*/
   theme: {
     extend: {
+      /*To use assets from the pipeline*/
+       /*backgroundImage*/
+      /*backgroundImage: {} */
+      
       /*borderWidth*/
       /*borderWidth: {} */
 
@@ -59,8 +63,8 @@ module.exports = {
         /*default Tailwind font family*/
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         /*TO DO- Check if adding fontFamily syntax is correct*/
-        oscine: ['Oscine', ...defaultTheme.fontFamily.oscine],
-        americanTypewriter: ['American TypeWriter', ...defaultTheme.fontFamily.americanTypewriter]
+        //oscine: ['Oscine', ...defaultTheme.fontFamily.oscine],
+        //americanTypewriter: ['American TypeWriter', ...defaultTheme.fontFamily.americanTypewriter]
       },
 
       /*flex*/
