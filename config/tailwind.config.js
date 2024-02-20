@@ -10,7 +10,10 @@ module.exports = {
     './public/application.html.erb',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/application.html.erb'
+    './app/views/layouts/application.html.erb',
+    './app/views/layouts/index.html.erb',
+    './app/views/students/index.html.erb',
+    './app/views/students/show.html.erb'
     /*{erb,haml,html,slim}'*/
   ],
   /*theme section is where you define anything related to the visual design of your site.*/
