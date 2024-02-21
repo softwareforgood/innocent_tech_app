@@ -1,10 +1,12 @@
 /*This is where you import the plugins to use and where to setup our custom @apply rules*/
+
+/*when we compile the stylings, tailwind will compile 
+tailwind base stylings, components, and utilities*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /*
-
 @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-blue-200;

@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Piggybank Cashbox</title>
-			<%= csrf_meta_tags %>
-			<%= csp_meta_tag %>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-			<%= stylesheet_link_tag 'application.tailwind.css', as: 'style' %>
-			<%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-		</head>
-		<body class="body-color">
-			<aside id="separator-sidebar" class="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0" aria-label="Sidebar">
+<aside id="separator-sidebar" class="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0" aria-label="Sidebar">
 				<div class="h-full overflow-y-auto bg-it-gray-50 px-3 py-4 dark:bg-gray-800">
 					<ul class="space-y-2 font-medium">
 						<li>
@@ -69,19 +57,3 @@
 					</ul>
 				</div>
 			</aside>
-
-			<!--main content-->
-			<div class="p-4 sm:ml-64">
-				<div class="rounded-lg border-2 border-solid border-gray-200 bg-gray-500 p-4 dark:border-gray-700">
-					<div class="main-content">
-						<div class="dashboard">
-							<!--this will hold dashboard content-->
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</body>
-	</html>
-</html>
-  
