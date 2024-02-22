@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby "3.1.2"
+ruby '3.1.2'
 gem 'pg', '~> 1.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -66,7 +66,11 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'selenium-webdriver'
+  gem 'shoulda-context', '~> 2.0'
+  gem 'shoulda-matchers', '~> 6.0'
 end
 
 gem 'tailwindcss-rails', '~> 2.3'
