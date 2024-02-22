@@ -1,0 +1,16 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - bin/**/*
+    - tmp/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'db/migrate/**/*.rb'
+    - 'config/environments/**'
+    - 'config/routes.rb'

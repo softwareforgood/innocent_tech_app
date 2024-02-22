@@ -72,10 +72,9 @@ We recommend reading up on the documentation, and syntax some before beginning t
 Setting up your local environment should install Tailwind for this application.
 
 
-
 ### Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
-Other environment setups are WIP.
+Other environment setups are TBD.
 
 Clone the repo:
 
@@ -89,6 +88,9 @@ git clone https://github.com/softwareforgood/innocent_tech_app.git
 ```
 
 #### Ruby
+
+- [Ruby](https://ruby-doc.org/) (see [.ruby-version](./.ruby-version) for the version used for this app)
+- [bundler](https://bundler.io/) — `gem install bundler`
 
 If you don't have a Ruby version manager, you'll want to install `rbenv`. If you
 already have `rbenv` or `rvm` installed, skip this step.
@@ -197,9 +199,45 @@ Setup DB:
 bin/rails db:setup # runs `rake db:create db:schema:load db:seed
 ```
 
-*Check-in:Verify your db is ready to go*
-- [ ] CHECK W/ EDITH ON HOW BEST TO DO THIS  
+or: 
 
+```bash
+bundle install
+rails db:setup
+```
+
+*Check-in:Verify your db is ready to go*
+- [ ] My db has been set up!  
+
+##### Start the Rails server 
+
+You can start the rails server using the command given below and visit the site with the URL http://localhost:3000
+
+```ruby
+rails s
+```
+*Check-in:Were you able to start your server?*
+- [ ] Yes! Ready to go! 
+- [ ] No, I need Chelsey, Edith, or one of my team mates to help me
+
+##### Open a Rails console
+
+```ruby
+rails c
+```
+*Check-in: Can you start your rails console? *
+- [ ] No, something is up
+- [ ] Yes! Console started with not issue.
+
+##### Run the linter
+
+```bash
+rails rubocop
+```
+
+*Check-in: Can you start your Rails linter? *
+- [ ] Yes! Rubocop ready!
+- [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
 #### MiniTest / How To Run Tests 
 
@@ -208,7 +246,15 @@ To run the tests:
 
 Open up a terminal
 Navigate to the directory
+
+```bash
+rails test
+```
+
+or alternatively, 
+```bash
 Run ruby test_file_name.rb
+```
 
 Reading Minitest Output
 Minitest runs the tests in a random order, and outputs a green dot for a successful test, a red E if there was an error while running the test, and a red F if the test assertion failed.
