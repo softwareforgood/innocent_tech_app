@@ -3,10 +3,10 @@
 puts 'seeding data for classroom setup'
 
 district = District.find_or_create_by(name: 'Demo District')
-school = School.where(district:).find_or_create_by(name: 'Demo School')
+school = district.schools.find_or_create_by(name: 'Demo School')
 educator = school.educators.find_or_create_by(first_name: 'Emily', last_name: 'Educator')
+classroom = school.classrooms.find_or_create_by(name: 'Demo Classroom')
 
-classroom = Classroom.where(school:).find_or_create_by(name: 'Demo Classroom')
 classroom.educators << educator
 
 STUDENTS = [
