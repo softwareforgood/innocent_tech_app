@@ -51,9 +51,10 @@ If you're not familiar with Asana, you can find more information here: https://h
 We will push our changes for testing and production to Heroku. https://devcenter.heroku.com/
 For committing changes to Heroku, we recommend getting the Heroku CLI set up on your laptop. 
 Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli 
+
 - [ ] I received and accepted Heroku application invite.
 - [ ] I can access Innocent Tech App Heroku dashboard.
-
+- [ ] I have Heroku CLI installed and ready to go locallys.
 
 #### Github
 - [ ] Local environment has been set up on your computer
