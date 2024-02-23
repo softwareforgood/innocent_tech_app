@@ -6,6 +6,9 @@ tailwind base stylings, components, and utilities*/
 @tailwind components;
 @tailwind utilities;
 
+@import "font-awesome";
+
+
 /*
 @layer components {
   .btn-primary {
