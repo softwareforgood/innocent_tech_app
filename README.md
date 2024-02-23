@@ -72,6 +72,15 @@ More information on the framework can be found here: https://tailwindcss.com/
 We recommend reading up on the documentation, and syntax some before beginning the first sprint. 
 Setting up your local environment should install Tailwind for this application.
 
+  ### Compiling w/ TailwindCSS
+  To make sure you have the most up to date stylings, you will need to compile the code so Tailwind recognizes the new changes. 
+  To compile, run the command below in another Terminal window. 
+
+  ```sh
+    bin/rails tailwindcss:watch
+  ```
+  More commands on compiling w/ TailwindCSS rails gem can be found here: https://github.com/rails/tailwindcss-rails
+
 
 ### Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
