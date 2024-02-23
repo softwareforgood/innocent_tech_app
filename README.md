@@ -67,7 +67,7 @@ Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli
 
 
 #### TailwindCSS 
-The CSS Framework we will be using for this project is called TailwindCSS.
+The CSS Framework we will be using for this project is called TailwindCSS. We're using the library through the tailwindcss-rails gem.
 More information on the framework can be found here: https://tailwindcss.com/
 We recommend reading up on the documentation, and syntax some before beginning the first sprint. 
 Setting up your local environment should install Tailwind for this application.
@@ -235,7 +235,7 @@ rails s
 ```ruby
 rails c
 ```
-*Check-in: Can you start your rails console? *
+*Check-in: Can you start your rails console?*
 - [ ] No, something is up
 - [ ] Yes! Console started with not issue.
 
@@ -245,7 +245,7 @@ rails c
 rails rubocop
 ```
 
-*Check-in: Can you start your Rails linter? *
+*Check-in: Can you start your Rails linter?*
 - [ ] Yes! Rubocop ready!
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
@@ -277,13 +277,14 @@ Minitest runs the tests in a random order, and outputs a green dot for a success
 #### Deployment Steps 
 *Please* double check you can commit to this repo. Then, follow the deployment steps listed below. 
 When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
-*You only commit your Readme file with the checklist. No other files are needed!* 
+*You only need commit your Readme file with the checklist. No other files are needed!* 
 
-  --commit your work on a feature branch
-  --make a PR to the main branch
-  --if PR approved, merge to main
-  --cd back to main
-  --pull the latest main branch
+  - [ ] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
+  - [ ] Edit your Readme
+  - [ ] Commit your feature branch to the repo
+  *Make sure you're only committing your readme*
+  - [ ] Open a Pull request. Change your PR title to: Yourname-Onboarding
+  - [ ] Request a review from Chelsey + Edith on your PR 
 
 *Check-in: Do you prefer Front-End development or Back-End development?*
 - [ ] Front end 
