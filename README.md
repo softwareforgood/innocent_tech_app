@@ -54,7 +54,7 @@ Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli
 
 - [ ] I received and accepted Heroku application invite.
 - [ ] I can access Innocent Tech App Heroku dashboard.
-- [ ] I have Heroku CLI installed and ready to go locallys.
+- [ ] I have Heroku CLI installed and ready to go locally.
 
 #### Github
 - [ ] Local environment has been set up on your computer
@@ -266,7 +266,7 @@ or alternatively,
 Run ruby test_file_name.rb
 ```
 
-Reading Minitest Output
+### Reading Minitest Output
 Minitest runs the tests in a random order, and outputs a green dot for a successful test, a red E if there was an error while running the test, and a red F if the test assertion failed.
 
 *Check-in: Are you  looking forward to writing tests?*
@@ -274,7 +274,24 @@ Minitest runs the tests in a random order, and outputs a green dot for a success
 - [ ] Its too early to tell 
 - [ ] No, not really
 
-#### Deployment Steps 
+#### Deployment Steps (Commit your work)
+
+### Heroku Deployment
+If you have the Heroku CLI installed (double check you do!), then you will need to add a Heroku remote to your local repository. 
+The app is already created so enter the command in your Terminal: 
+
+```bash
+heroku git:remote -a example-app
+```
+
+Commit changes to 
+```bash
+git push heroku main
+```
+
+
+
+### Readme Deployment
 *Please* double check you can commit to this repo. Then, follow the deployment steps listed below. 
 When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
 *You only need commit your Readme file with the checklist. No other files are needed!* 
@@ -290,7 +307,6 @@ When you create your feature branch, follow this naming format for your branch: 
 - [ ] Front end 
 - [ ] Back end 
 - [ ] I'm open to either 
-
 
 *Final Check-in: How did local set up go?*
 
