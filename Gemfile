@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby "3.1.2"
+ruby '3.1.2'
 gem 'pg', '~> 1.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -69,6 +69,5 @@ group :test do
   gem 'selenium-webdriver'
 end
 
+gem 'font-awesome-sass', '~> 6.5.1'
 gem 'tailwindcss-rails', '~> 2.3'
-gem "font-awesome-sass", "~> 6.5.1"
-
