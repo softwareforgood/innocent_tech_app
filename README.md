@@ -19,7 +19,7 @@ There will be an Innocent Tech kick off the first week of the apprenticeship.
 For this apprenticeship, we will use development sprints to get the tasks completed. 
 Our sprints run for 2 weeks each, from Tuesday to the following Tuesday. 
 After each sprint, we will have a retro* every Wednesday after the sprint ends. 
-*A retro is [define retro]
+*We will cover retros more during the Welcome To SFG meeting. 
 - [ ] I received and accepted calendar invites for Sprint retros
 
 
