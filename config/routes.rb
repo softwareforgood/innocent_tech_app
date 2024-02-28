@@ -13,7 +13,6 @@ Rails.application.routes.draw do
 
   get "application/index", to: "application#index"
   
-  get "/students", to: "students#index"
-  get "/students/:id", to: "students#show"
+  resources :students, only: %i[index new]
   
 end
