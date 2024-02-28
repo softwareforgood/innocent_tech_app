@@ -104,6 +104,13 @@ GEM
       ruby2_keywords
     error_highlight (0.6.0)
     erubi (1.12.0)
+    factory_bot (6.4.6)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.4.3)
+      factory_bot (~> 6.4)
+      railties (>= 5.0.0)
+    faker (3.2.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -235,6 +242,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    shoulda-context (2.0.0)
+    shoulda-matchers (6.1.0)
+      activesupport (>= 5.2.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -284,6 +294,8 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  factory_bot_rails
+  faker
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -292,6 +304,8 @@ DEPENDENCIES
   redis (>= 4.0.1)
   rubocop-rails
   selenium-webdriver
+  shoulda-context (~> 2.0)
+  shoulda-matchers (~> 6.0)
   sprockets-rails
   stimulus-rails
   tailwindcss-rails (~> 2.3)
