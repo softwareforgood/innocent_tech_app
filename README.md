@@ -3,27 +3,28 @@
 Note: *Please* read this readme carefully. 
 *Onboarding instructions and tasks are listed throughout this readme.*
 The tasks shown throughout the readme are what we (Chelsey & Edith) will need to show that your local env is setup, you can commit to the repo, *and* you have completed onboarding.
-If you need assistance with *any* step of onboarding, please reach out to Chelsey + Edith through email or on Slack. 
+If you need assistance with *any* step of onboarding, please reach out to Chelsey, Edith, or your team mates on Slack.
 
-HAPPY CODING! 
+HAPPY CODING!  
 
 ### Project: Innocent Tech 
 
 For this cohort, you will be working on the educator user of an application called 'Innocent Tech.'
 Innocent Tech is a full-stack application that works to eradicate racial bias in the classroom to better support students of color. 
-There will be an Innocent Tech kick off on [event info here]
+There will be an Innocent Tech kick off the first week of the apprenticeship.
 - [ ] I received and accepted the 'Innocent Tech Kickoff' invite
 
 
 ### Coding Practices 
 For this apprenticeship, we will use development sprints to get the tasks completed. 
 Our sprints run for 2 weeks each, from Tuesday to the following Tuesday. 
-We will have retros the Wednesday after the sprint ends. 
+After each sprint, we will have a retro* every Wednesday after the sprint ends. 
+*A retro is [define retro]
 - [ ] I received and accepted calendar invites for Sprint retros
 
 
 ### Technical Requirements + Tools Overview 
-At SFG and during the duration of this project, we will be using some technical requirements and tools that most of you are familiar with, and some new tools! Read on for the new additions. :) 
+At SFG and during the duration of this project, we will be using some technical requirements and tools that most of you are familiar with, and some new tools! Read on for the new additions. :D 
 
 #### Google Suite 
 - [ ] Received and Read the SFG Handbook
@@ -33,28 +34,32 @@ At SFG and during the duration of this project, we will be using some technical 
 - [ ] Upload your timesheet document to your acct Google Docs, send link to Chelsey and Edith to access 
 
 #### Figma
-We use Figma as our wireframe tool.
-The Innocent Tech wireframe can be accessed here: [link]
-NOTE: This is a very expansive wireframe. Feel free to explore more, but for this project, we will be using *SPRINT 6* as reference for front end changes. 
+We are using Figma as our wireframe tool.
+The Innocent Tech Figma invite will be sent to your sfg email address.(Please let us know if you do not!)
+NOTE: This is a very expansive wireframe. Feel free to explore more, but for this project, we will let you know which tabs of the wirefrsme to use for reference throughout the program.
 - [ ] I received and accepted Figma wireframe invite.
-- [ ] I can access SPRINT 6 on the Figma wireframe.
+- [ ] I can access ALL the tabs on the Figma wireframe.
 
 
 ### Asana 
 We will use Asana as our kan-ban board for this project. 
+The Innocent Tech Asana invite will be sent to your sfg email address.(Please let us know if you do not!)
 If you're not familiar with Asana, you can find more information here: https://help.asana.com/hc/en-us/articles/14250783001627-How-to-start-using-Asana 
 - [ ] I received and accepted Asana board invite. 
 - [ ] I can access the Innocent Tech MVP Asana board. 
 
 
 #### Heroku 
-We will push our changes for testing and production to Heroku. https://devcenter.heroku.com/
+We will push our changes for testing and production to Heroku. 
+The Innocent Tech Heroku invite will be sent to your sfg email address.(Please let us know if you do not!)
+You can find more Heroku dev information here: https://devcenter.heroku.com/
+
 For committing changes to Heroku, we recommend getting the Heroku CLI set up on your laptop. 
 Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli 
 
-- [ ] I received and accepted Heroku application invite.
-- [ ] I can access Innocent Tech App Heroku dashboard.
+- [ ] I received and accepted Innocent Tech App Heroku application invite.
 - [ ] I have Heroku CLI installed and ready to go locally.
+- [ ] I can access Innocent Tech App Heroku dashboard.
 
 #### Github
 - [ ] Local environment has been set up on your computer
@@ -62,15 +67,17 @@ Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli
 - [ ] Assigned your PR to Chelsey + Edith  
 
 #### Slack 
+One of our communication tools is Slack. You all are familiar with Slack since you all used it during your bootcamp. 
 - [ ] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
-- [ ] Introduce yourself on the Apprentice Slack channel! Post a wave, hi, etc. to the Apprentice Slack channel. 
+Software For Good team is excited to have you working with us, and would love to lear more about you all! :D
+- [ ] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
 
 
 #### TailwindCSS 
-The CSS Framework we will be using for this project is called TailwindCSS. We're using the library through the tailwindcss-rails gem.
-More information on the framework can be found here: https://tailwindcss.com/
-We recommend reading up on the documentation, and syntax some before beginning the first sprint. 
-Setting up your local environment should install Tailwind for this application.
+The CSS Framework we will be using for this project is called [TailwindCSS](https://tailwindcss.com/).
+We're using TailwindCSS through the [tailwindcss-rails gem](https://github.com/rails/tailwindcss-rails). 
+We recommend reading up on the  gem documentation, and Tailwindcss syntax some before beginning the first sprint. 
+When you set up your local environment, Tailwind will be installed for the application. 
 
   ### Compiling w/ TailwindCSS
   To make sure you have the most up to date stylings, you will need to compile the code so Tailwind recognizes the new changes. 
@@ -79,7 +86,7 @@ Setting up your local environment should install Tailwind for this application.
   ```sh
     bin/rails tailwindcss:watch
   ```
-  More commands on compiling w/ TailwindCSS rails gem can be found here: https://github.com/rails/tailwindcss-rails
+  More compiling w/ TailwindCSS rails gem can be found here: https://github.com/rails/tailwindcss-rails
 
 
 ### Environment Setup
@@ -235,6 +242,13 @@ rails s
 ```ruby
 rails c
 ```
+
+#### Close out of Rails Console 
+```bash
+  cmd + c (mac)
+  ctrl + c (windows
+```
+
 *Check-in: Can you start your rails console?*
 - [ ] No, something is up
 - [ ] Yes! Console started with not issue.
@@ -251,7 +265,7 @@ rails rubocop
 
 #### MiniTest / How To Run Tests 
 
-For this application, we are using the testing library Minitest. 
+For this application, we are using the testing library [Minitest](https://github.com/minitest/minitest). 
 To run the tests:
 
 Open up a terminal
@@ -280,26 +294,27 @@ Minitest runs the tests in a random order, and outputs a green dot for a success
 If you have the Heroku CLI installed (double check you do!), then you will need to add a Heroku remote to your local repository. 
 The app is already created so enter the command in your Terminal: 
 
+Remote setup:
 ```bash
 heroku git:remote -a example-app
 ```
 
-Commit changes to 
+
+Commit changes: 
 ```bash
 git push heroku main
 ```
 
-
-
 ### Readme Deployment
-*Please* double check you can commit to this repo. Then, follow the deployment steps listed below. 
+Follow the deployment steps listed below. 
 When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
 *You only need commit your Readme file with the checklist. No other files are needed!* 
 
   - [ ] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
-  - [ ] Edit your Readme
+  - [ ] Edit your Readme(select answers to the checklist)
   - [ ] Commit your feature branch to the repo
   *Make sure you're only committing your readme*
+
   - [ ] Open a Pull request. Change your PR title to: Yourname-Onboarding
   - [ ] Request a review from Chelsey + Edith on your PR 
 
@@ -313,4 +328,3 @@ When you create your feature branch, follow this naming format for your branch: 
 - [ ] Double checked that *all* the onboarding tasks on this readme
 - [ ] I answered all of the check-in questions(including this one!) listed throughout this readme.
 - [ ] I'm ready to submit this readme for review! 
-
