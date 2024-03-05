@@ -8,4 +8,4 @@ default: &default
 
 test:
   <<: *default
-  database: housing_hub_test
+  database: innocent_tech_app_test
