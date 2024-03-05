@@ -5,6 +5,7 @@ AllCops:
     - db/schema.rb
     - bin/**/*
     - tmp/**/*
+    - vendor/**/*
 
 Style/Documentation:
   Enabled: false

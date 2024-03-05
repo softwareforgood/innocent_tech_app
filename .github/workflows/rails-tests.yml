@@ -1,0 +1,35 @@
+name: Innocent Tech
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    env:
+      RAILS_ENV: test
+
+    concurrency:
+      group: ${{ github.workflow }}-lint_backend-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        env:
+          BUNDLE_FROZEN: true
+        with:
+          ruby-version: 3.1.2
+          bundler-cache: true
+          cache-version: 1
+
+      - name: Lint
+        run: |
+          bundle exec rubocop
