@@ -207,20 +207,12 @@ brew install nvm yarn
 nvm install && nvm use # This will install and use the version in the project's `.nvmrc` file
 ```
 
-#### DB setup
-
-Setup DB:
+#### DB setup and seed
 
 ```sh
 # From project root:
-bin/rails db:setup # runs `rake db:create db:schema:load db:seed
-```
-
-or: 
-
-```bash
-bundle install
-rails db:setup
+bin/setup
+rails db:seed
 ```
 
 *Check-in:Verify your db is ready to go*
@@ -237,10 +229,11 @@ rails s
 - [ ] Yes! Ready to go! 
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
-##### Open a Rails console
-
-```ruby
+##### Open a Rails console and confirm seeds
+If seeds were successful, you should have at least four (4) students in the database.
+```bash
 rails c
+> Student.all
 ```
 
 #### Close out of Rails Console 
