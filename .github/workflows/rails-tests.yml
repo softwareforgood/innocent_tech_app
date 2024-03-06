@@ -1,0 +1,76 @@
+name: Innocent Tech
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+    concurrency:
+      group: ${{ github.workflow }}-test_backend-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+    services:
+      postgres:
+        image: postgres
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_USER: runner
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install required system packages
+        run: sudo apt-get -yqq install libpq-dev libpng16-16
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        env:
+          BUNDLE_FROZEN: true
+        with:
+          ruby-version: 3.1.2
+          bundler-cache: true
+          cache-version: 1
+
+      - name: Copy configuration files
+        run: cp config/database.github.yml config/database.yml
+
+      - name: Create db and run migrations
+        run: |
+          bin/rails db:create db:schema:load db:test:prepare
+          bin/rails db:migrate
+
+      - name: Rails Test
+        run: bin/rails test
+
+  lint:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+    concurrency:
+      group: ${{ github.workflow }}-lint_backend-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        env:
+          BUNDLE_FROZEN: true
+        with:
+          ruby-version: 3.1.2
+          bundler-cache: true
+          cache-version: 1
+
+      - name: Lint
+        run: |
+          bundle exec rubocop
