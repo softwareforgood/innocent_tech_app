@@ -54,11 +54,7 @@ We will push our changes for testing and production to Heroku.
 The Innocent Tech Heroku invite will be sent to your sfg email address.(Please let us know if you do not!)
 You can find more Heroku dev information here: https://devcenter.heroku.com/
 
-For committing changes to Heroku, we recommend getting the Heroku CLI set up on your laptop. 
-Instructions can be found here: https://devcenter.heroku.com/articles/heroku-cli 
-
 - [ ] I received and accepted Innocent Tech App Heroku application invite.
-- [ ] I have Heroku CLI installed and ready to go locally.
 - [ ] I can access Innocent Tech App Heroku dashboard.
 
 #### Github
@@ -284,19 +280,8 @@ Minitest runs the tests in a random order, and outputs a green dot for a success
 #### Deployment Steps (Commit your work)
 
 ### Heroku Deployment
-If you have the Heroku CLI installed (double check you do!), then you will need to add a Heroku remote to your local repository. 
-The app is already created so enter the command in your Terminal: 
-
-Remote setup:
-```bash
-heroku git:remote -a example-app
-```
-
-
-Commit changes: 
-```bash
-git push heroku main
-```
+When a Pull Request is merged into the `main` branch, it triggers a deploy in the Heroku staging environment.
+You can track your deployment in the Heroku UI under the [Activity tab](https://dashboard.heroku.com/apps/innocent-tech-app/activity).
 
 ### Readme Deployment
 Follow the deployment steps listed below. 
