@@ -203,6 +203,15 @@ brew install nvm yarn
 nvm install && nvm use # This will install and use the version in the project's `.nvmrc` file
 ```
 
+#### Add credential keys
+
+Ask Edith or Chelsey for a link to access the app credential keys. Once you have the keys, create three new files:
+- `config/credentials/development.key`
+- `config/credentials/test.key`
+- `config/credentials/staging.key`
+
+Populate each file with the corresponding key. This is *required* before you can set up the db or start up the server.
+
 #### DB setup and seed
 
 ```sh
