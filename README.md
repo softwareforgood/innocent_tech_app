@@ -291,19 +291,34 @@ Minitest runs the tests in a random order, and outputs a green dot for a success
 #### Deployment Steps (Commit your work)
 
 ### Heroku Deployment
+#### First time setup:
 If you have the Heroku CLI installed (double check you do!), then you will need to add a Heroku remote to your local repository. 
-The app is already created so enter the command in your Terminal: 
+The app is already created so enter the command in your Terminal
 
-Remote setup:
+1. From the app root directory, log into Heroku CLI
 ```bash
-heroku git:remote -a example-app
+heroku login
 ```
 
+2. Add the Heroku app as a remote git repository
+```bash
+heroku git:remote -a innocent-tech-app
+```
 
-Commit changes: 
+#### Deploy the main branch:
+Ensure you have the latest version of the `main` branch locally.
+
+```bash
+git pull origin main
+```
+
+Then push to the heroku remote repository. This will trigger a deployment. 
+
 ```bash
 git push heroku main
 ```
+
+You can track your deployment in the Heroku UI under the [Activity tab](https://dashboard.heroku.com/apps/innocent-tech-app/activity).
 
 ### Readme Deployment
 Follow the deployment steps listed below. 
