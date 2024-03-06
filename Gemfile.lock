@@ -102,7 +102,6 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.0)
       ruby2_keywords
-    error_highlight (0.6.0)
     erubi (1.12.0)
     factory_bot (6.4.6)
       activesupport (>= 5.0.0)
@@ -293,7 +292,6 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  error_highlight (>= 0.4.0)
   factory_bot_rails
   faker
   importmap-rails
