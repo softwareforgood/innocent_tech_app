@@ -42,7 +42,7 @@ NOTE: This is a very expansive wireframe. Feel free to explore more, but for thi
 - [ ] I received and accepted Figma wireframe invite.
 - [ ] I can access ALL the tabs on the Figma wireframe.
 
-### Asana 
+#### Asana 
 We will use Asana as our kan-ban board for this project. 
 The Innocent Tech Asana invite will be sent to your sfg email address.(Please let us know if you do not!)
 If you're not familiar with Asana, you can find more information here: https://help.asana.com/hc/en-us/articles/14250783001627-How-to-start-using-Asana 
@@ -143,27 +143,18 @@ See if you have PostgreSQL:
 psql --version
 ```
 
-If it's not installed, or the version isn't >=11.0, install and run it using Homebrew:
+If it's not installed, or the version isn't >=16.0, install and run it using Homebrew:
 
 ```sh
-brew install postgresql@12
+brew install postgresql@16
 brew services stop postgresql
-brew services start postgresql@12
+brew services start postgresql@16
 ```
 
 Create a db user:
 
 ```sh
 psql -c "[authentication info here]';"
-```
-
-#### Redis - if not using using docker 
-
-You'll need `redis` in order for `sidekiq` to work.
-
-```sh
-brew install redis
-brew services start redis
 ```
 
 #### Rails
@@ -174,8 +165,8 @@ bundle install # Make sure you're in the innocent_tech_app root directory
 ```
 
 *If you get an error installing `pg` while running the `bundle install` command, it may be resolved
-by running `brew install postgresql`, even if you have already installed `postgresql@11` or another
-specific version of `postgresql`. Unlike when you installed `postgresql@11` above, you do not need
+by running `brew install postgresql`, even if you have already installed `postgresql@16` or another
+specific version of `postgresql`. Unlike when you installed `postgresql@16` above, you do not need
 to start the `postgresql` service for this to fix your `bundle install` error.*
 
 #### Javascript
@@ -227,7 +218,7 @@ rails c
 #### Close out of Rails Console 
 ```bash
   cmd + c (mac)
-  ctrl + c (windows
+  ctrl + c (windows)
 ```
 
 *Check-in: Can you start your rails console?*
