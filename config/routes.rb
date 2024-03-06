@@ -11,7 +11,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   root 'application#index'
 
-  get 'application/index', to: 'application#index'
-
   resources :students, only: %i[index new]
 end
