@@ -14,7 +14,7 @@ tailwind base stylings, components, and utilities*/
     @apply flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700;
   }
 
-  .tab-title{
+  .tab-title {
     @apply ms-3 flex-1 whitespace-nowrap;
   }
 }
