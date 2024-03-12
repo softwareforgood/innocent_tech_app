@@ -6,16 +6,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <!--This is where you will add render lines to render the partials-->
+      <div class="container main-content">
+        <%= yield %>
+        <%= render 'layouts/sidebar_nav' %>
+      </div>
     </main>
   </body>
 </html>
+
