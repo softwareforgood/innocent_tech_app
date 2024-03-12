@@ -11,5 +11,4 @@ Rails.application.routes.draw do
   # root "posts#index"
   root 'application#index'
 
-  resources :students, only: %i[index new]
 end

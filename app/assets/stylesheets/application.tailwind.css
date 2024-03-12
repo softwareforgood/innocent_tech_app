@@ -8,12 +8,13 @@ tailwind base stylings, components, and utilities*/
 
 @import "font-awesome";
 
-
-/*
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+
+  .nav-tab {
+    @apply flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700;
+  }
+
+  .tab-title{
+    @apply ms-3 flex-1 whitespace-nowrap;
   }
 }
-
-*/

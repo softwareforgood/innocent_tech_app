@@ -17,7 +17,7 @@ module.exports = {
   theme: {
     extend: {
       /*To use assets from the pipeline*/
-       /*backgroundImage*/
+      /*backgroundImage*/
       /*backgroundImage: {} */
       
       /*borderWidth*/
