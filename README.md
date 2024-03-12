@@ -7,7 +7,7 @@ If you need assistance with *any* step of onboarding, please reach out to Chelse
 
 HAPPY CODING!  
 
-### Project: Innocent Tech 
+# Project: Innocent Tech 
 
 For this cohort, you will be working on the educator user of an application called 'Innocent Tech.'
 Innocent Tech is a full-stack application that works to eradicate racial bias in the classroom to better support students of color. 
@@ -26,6 +26,8 @@ After each sprint, we will have a retro* every Wednesday after the sprint ends.
 ### Technical Requirements + Tools Overview 
 At SFG and during the duration of this project, we will be using some technical requirements and tools that most of you are familiar with, and some new tools! Read on for the new additions. :D 
 
+## Tools Overview 
+
 #### Google Suite 
 - [ ] Received and Read the SFG Handbook
 - [ ] Accepted calendar invites for 'Welcome To SFG'
@@ -40,14 +42,12 @@ NOTE: This is a very expansive wireframe. Feel free to explore more, but for thi
 - [ ] I received and accepted Figma wireframe invite.
 - [ ] I can access ALL the tabs on the Figma wireframe.
 
-
-### Asana 
+#### Asana 
 We will use Asana as our kan-ban board for this project. 
 The Innocent Tech Asana invite will be sent to your sfg email address.(Please let us know if you do not!)
 If you're not familiar with Asana, you can find more information here: https://help.asana.com/hc/en-us/articles/14250783001627-How-to-start-using-Asana 
 - [ ] I received and accepted Asana board invite. 
 - [ ] I can access the Innocent Tech MVP Asana board. 
-
 
 #### Heroku 
 We will push our changes for testing and production to Heroku. 
@@ -68,24 +68,7 @@ One of our communication tools is Slack. You all are familiar with Slack since y
 Software For Good team is excited to have you working with us, and would love to lear more about you all! :D
 - [ ] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
 
-
-#### TailwindCSS 
-The CSS Framework we will be using for this project is called [TailwindCSS](https://tailwindcss.com/).
-We're using TailwindCSS through the [tailwindcss-rails gem](https://github.com/rails/tailwindcss-rails). 
-We recommend reading up on the  gem documentation, and Tailwindcss syntax some before beginning the first sprint. 
-When you set up your local environment, Tailwind will be installed for the application. 
-
-  ### Compiling w/ TailwindCSS
-  To make sure you have the most up to date stylings, you will need to compile the code so Tailwind recognizes the new changes. 
-  To compile, run the command below in another Terminal window. 
-
-  ```sh
-    bin/rails tailwindcss:watch
-  ```
-  More compiling w/ TailwindCSS rails gem can be found here: https://github.com/rails/tailwindcss-rails
-
-
-### Environment Setup
+## Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
 Other environment setups are TBD.
 
@@ -160,27 +143,18 @@ See if you have PostgreSQL:
 psql --version
 ```
 
-If it's not installed, or the version isn't >=11.0, install and run it using Homebrew:
+If it's not installed, or the version isn't >=16.0, install and run it using Homebrew:
 
 ```sh
-brew install postgresql@12
+brew install postgresql@16
 brew services stop postgresql
-brew services start postgresql@12
+brew services start postgresql@16
 ```
 
 Create a db user:
 
 ```sh
 psql -c "[authentication info here]';"
-```
-
-#### Redis - if not using using docker 
-
-You'll need `redis` in order for `sidekiq` to work.
-
-```sh
-brew install redis
-brew services start redis
 ```
 
 #### Rails
@@ -191,8 +165,8 @@ bundle install # Make sure you're in the innocent_tech_app root directory
 ```
 
 *If you get an error installing `pg` while running the `bundle install` command, it may be resolved
-by running `brew install postgresql`, even if you have already installed `postgresql@11` or another
-specific version of `postgresql`. Unlike when you installed `postgresql@11` above, you do not need
+by running `brew install postgresql`, even if you have already installed `postgresql@16` or another
+specific version of `postgresql`. Unlike when you installed `postgresql@16` above, you do not need
 to start the `postgresql` service for this to fix your `bundle install` error.*
 
 #### Javascript
@@ -223,7 +197,7 @@ rails db:seed
 *Check-in:Verify your db is ready to go*
 - [ ] My db has been set up!  
 
-##### Start the Rails server 
+#### Start the Rails server 
 
 You can start the rails server using the command given below and visit the site with the URL http://localhost:3000
 
@@ -234,7 +208,7 @@ rails s
 - [ ] Yes! Ready to go! 
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
-##### Open a Rails console and confirm seeds
+#### Open a Rails console and confirm seeds
 If seeds were successful, you should have at least four (4) students in the database.
 ```bash
 rails c
@@ -244,14 +218,14 @@ rails c
 #### Close out of Rails Console 
 ```bash
   cmd + c (mac)
-  ctrl + c (windows
+  ctrl + c (windows)
 ```
 
 *Check-in: Can you start your rails console?*
 - [ ] No, something is up
 - [ ] Yes! Console started with not issue.
 
-##### Run the linter
+#### Run the linter
 
 ```bash
 rails rubocop
@@ -260,6 +234,21 @@ rails rubocop
 *Check-in: Can you start your Rails linter?*
 - [ ] Yes! Rubocop ready!
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
+
+#### TailwindCSS 
+The CSS Framework we will be using for this project is called [TailwindCSS](https://tailwindcss.com/).
+We're using TailwindCSS through the [tailwindcss-rails gem](https://github.com/rails/tailwindcss-rails). 
+We recommend reading up on the  gem documentation, and Tailwindcss syntax some before beginning the first sprint. 
+When you set up your local environment, Tailwind will be installed for the application. 
+
+  ### Compiling w/ TailwindCSS
+  To make sure you have the most up to date stylings, you will need to compile the code so Tailwind recognizes the new changes. 
+  To compile, run the command below in another Terminal window. 
+
+  ```sh
+    bin/rails tailwindcss:watch
+  ```
+  More compiling w/ TailwindCSS rails gem can be found here: https://github.com/rails/tailwindcss-rails
 
 #### MiniTest / How To Run Tests 
 
@@ -278,7 +267,7 @@ or alternatively,
 Run ruby test_file_name.rb
 ```
 
-### Reading Minitest Output
+#### Reading Minitest Output
 Minitest runs the tests in a random order, and outputs a green dot for a successful test, a red E if there was an error while running the test, and a red F if the test assertion failed.
 
 *Check-in: Are you  looking forward to writing tests?*
