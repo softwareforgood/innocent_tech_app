@@ -72,4 +72,5 @@ group :test do
   gem 'shoulda-matchers', '~> 6.0'
 end
 
+gem 'font-awesome-sass', '~> 6.5.1'
 gem 'tailwindcss-rails', '~> 2.3'

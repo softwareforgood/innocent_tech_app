@@ -1,6 +1,5 @@
 /*NOTE: All Tailwind config listed below is from Innocent Tech Wireframe*/
 /*Stylings may change*/
-
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -10,14 +9,15 @@ module.exports = {
     './public/application.html.erb',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/application.html.erb'
+    './app/views/**/*',
+    './app/views/**/*.{erb,haml,html,slim}'
     /*{erb,haml,html,slim}'*/
   ],
   /*theme section is where you define anything related to the visual design of your site.*/
   theme: {
     extend: {
       /*To use assets from the pipeline*/
-       /*backgroundImage*/
+      /*backgroundImage*/
       /*backgroundImage: {} */
       
       /*borderWidth*/
