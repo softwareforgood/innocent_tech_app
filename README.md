@@ -12,7 +12,7 @@ HAPPY CODING!
 For this cohort, you will be working on the educator user of an application called 'Innocent Tech.'
 Innocent Tech is a full-stack application that works to eradicate racial bias in the classroom to better support students of color. 
 There will be an Innocent Tech kick off the first week of the apprenticeship.
-- [ ] I received and accepted the 'Innocent Tech Kickoff' invite
+- [X] I received and accepted the 'Innocent Tech Kickoff' invite
 
 
 ### Coding Practices 
@@ -20,7 +20,7 @@ For this apprenticeship, we will use development sprints to get the tasks comple
 Our sprints run for 2 weeks each, from Tuesday to the following Tuesday. 
 After each sprint, we will have a retro* every Wednesday after the sprint ends. 
 *We will cover retros more during the Welcome To SFG meeting. 
-- [ ] I received and accepted calendar invites for Sprint retros
+- [X] I received and accepted calendar invites for Sprint retros
 
 
 ### Technical Requirements + Tools Overview 
@@ -29,11 +29,11 @@ At SFG and during the duration of this project, we will be using some technical 
 ## Tools Overview 
 
 #### Google Suite 
-- [ ] Received and Read the SFG Handbook
-- [ ] Accepted calendar invites for 'Welcome To SFG'
-- [ ] Accepted calendar invite for Apprentice calendar
-- [ ] Set your Google Calendar settings to everyone, so all SFG staff can access your calendar
-- [ ] Upload your timesheet document to your acct Google Docs, send link to Chelsey and Edith to access 
+- [X] Received and Read the SFG Handbook
+- [X] Accepted calendar invites for 'Welcome To SFG'
+- [X] Accepted calendar invite for Apprentice calendar
+- [X] Set your Google Calendar settings to everyone, so all SFG staff can access your calendar
+- [X] Upload your timesheet document to your acct Google Docs, send link to Chelsey and Edith to access 
 
 #### Figma
 We are using Figma as our wireframe tool.
@@ -41,13 +41,14 @@ The Innocent Tech Figma invite will be sent to your sfg email address.(Please le
 NOTE: This is a very expansive wireframe. Feel free to explore more, but for this project, we will let you know which tabs of the wirefrsme to use for reference throughout the program.
 - [ ] I received and accepted Figma wireframe invite.
 - [ ] I can access ALL the tabs on the Figma wireframe.
+***Not Yet***
 
 #### Asana 
 We will use Asana as our kan-ban board for this project. 
 The Innocent Tech Asana invite will be sent to your sfg email address.(Please let us know if you do not!)
 If you're not familiar with Asana, you can find more information here: https://help.asana.com/hc/en-us/articles/14250783001627-How-to-start-using-Asana 
-- [ ] I received and accepted Asana board invite. 
-- [ ] I can access the Innocent Tech MVP Asana board. 
+- [X] I received and accepted Asana board invite. 
+- [X] I can access the Innocent Tech MVP Asana board. 
 
 #### Heroku 
 We will push our changes for testing and production to Heroku. 
@@ -56,17 +57,18 @@ You can find more Heroku dev information here: https://devcenter.heroku.com/
 
 - [ ] I received and accepted Innocent Tech App Heroku application invite.
 - [ ] I can access Innocent Tech App Heroku dashboard.
+**Not Yet**
 
 #### Github
-- [ ] Local environment has been set up on your computer
+- [X] Local environment has been set up on your computer
 - [ ] Created Onboarding pull request for review. 
 - [ ] Assigned your PR to Chelsey + Edith  
 
 #### Slack 
 One of our communication tools is Slack. You all are familiar with Slack since you all used it during your bootcamp. 
-- [ ] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
+- [X] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
 Software For Good team is excited to have you working with us, and would love to lear more about you all! :D
-- [ ] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
+- [X] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
 
 ## Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
@@ -156,6 +158,7 @@ Create a db user:
 ```sh
 psql -c "[authentication info here]';"
 ```
+**My postico is being weird**
 
 #### Rails
 
@@ -211,7 +214,7 @@ rails s
 for git, rubocop, tests, or any other one-off commands you'd like to run.
 
 *Check-in:Were you able to start your server?*
-- [ ] Yes! Ready to go! 
+- [X] Yes! Ready to go! 
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
 #### Open a Rails console and confirm seeds
@@ -229,7 +232,7 @@ rails c
 
 *Check-in: Can you start your rails console?*
 - [ ] No, something is up
-- [ ] Yes! Console started with not issue.
+- [X] Yes! Console started with not issue.
 
 #### Run the linter
 
@@ -238,7 +241,7 @@ rails rubocop
 ```
 
 *Check-in: Can you start your Rails linter?*
-- [ ] Yes! Rubocop ready!
+- [X] Yes! Rubocop ready!
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
 #### TailwindCSS 
@@ -277,7 +280,7 @@ Run ruby test_file_name.rb
 Minitest runs the tests in a random order, and outputs a green dot for a successful test, a red E if there was an error while running the test, and a red F if the test assertion failed.
 
 *Check-in: Are you  looking forward to writing tests?*
-- [ ] Yes, of course!
+- [X] Yes, of course!
 - [ ] Its too early to tell 
 - [ ] No, not really
 
@@ -292,9 +295,9 @@ Follow the deployment steps listed below.
 When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
 *You only need commit your Readme file with the checklist. No other files are needed!* 
 
-  - [ ] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
-  - [ ] Edit your Readme(select answers to the checklist)
-  - [ ] Commit your feature branch to the repo
+  - [X] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
+  - [X] Edit your Readme(select answers to the checklist)
+  - [X] Commit your feature branch to the repo
   *Make sure you're only committing your readme*
 
   - [ ] Open a Pull request. Change your PR title to: Yourname-Onboarding
@@ -302,11 +305,11 @@ When you create your feature branch, follow this naming format for your branch: 
 
 *Check-in: Do you prefer Front-End development or Back-End development?*
 - [ ] Front end 
-- [ ] Back end 
-- [ ] I'm open to either 
+- [X] Back end 
+- [] I'm open to either 
 
 *Final Check-in: How did local set up go?*
 
 - [ ] Double checked that *all* the onboarding tasks on this readme
-- [ ] I answered all of the check-in questions(including this one!) listed throughout this readme.
-- [ ] I'm ready to submit this readme for review! 
+- [X] I answered all of the check-in questions(including this one!) listed throughout this readme.
+- [X] I'm ready to submit this readme for review! 
