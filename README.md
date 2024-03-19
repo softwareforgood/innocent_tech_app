@@ -12,7 +12,7 @@ HAPPY CODING!
 For this cohort, you will be working on the educator user of an application called 'Innocent Tech.'
 Innocent Tech is a full-stack application that works to eradicate racial bias in the classroom to better support students of color. 
 There will be an Innocent Tech kick off the first week of the apprenticeship.
-- [ ] I received and accepted the 'Innocent Tech Kickoff' invite
+- [X] I received and accepted the 'Innocent Tech Kickoff' invite
 
 
 ### Coding Practices 
@@ -20,7 +20,7 @@ For this apprenticeship, we will use development sprints to get the tasks comple
 Our sprints run for 2 weeks each, from Tuesday to the following Tuesday. 
 After each sprint, we will have a retro* every Wednesday after the sprint ends. 
 *We will cover retros more during the Welcome To SFG meeting. 
-- [ ] I received and accepted calendar invites for Sprint retros
+- [X] I received and accepted calendar invites for Sprint retros
 
 
 ### Technical Requirements + Tools Overview 
@@ -29,25 +29,25 @@ At SFG and during the duration of this project, we will be using some technical 
 ## Tools Overview 
 
 #### Google Suite 
-- [ ] Received and Read the SFG Handbook
-- [ ] Accepted calendar invites for 'Welcome To SFG'
-- [ ] Accepted calendar invite for Apprentice calendar
-- [ ] Set your Google Calendar settings to everyone, so all SFG staff can access your calendar
-- [ ] Upload your timesheet document to your acct Google Docs, send link to Chelsey and Edith to access 
+- [X] Received and Read the SFG Handbook
+- [X] Accepted calendar invites for 'Welcome To SFG'
+- [X] Accepted calendar invite for Apprentice calendar
+- [X] Set your Google Calendar settings to everyone, so all SFG staff can access your calendar
+- [X] Upload your timesheet document to your acct Google Docs, send link to Chelsey and Edith to access 
 
 #### Figma
 We are using Figma as our wireframe tool.
 The Innocent Tech Figma invite will be sent to your sfg email address.(Please let us know if you do not!)
 NOTE: This is a very expansive wireframe. Feel free to explore more, but for this project, we will let you know which tabs of the wirefrsme to use for reference throughout the program.
-- [ ] I received and accepted Figma wireframe invite.
+- [X] I received and accepted Figma wireframe invite.
 - [ ] I can access ALL the tabs on the Figma wireframe.
 
 #### Asana 
 We will use Asana as our kan-ban board for this project. 
 The Innocent Tech Asana invite will be sent to your sfg email address.(Please let us know if you do not!)
 If you're not familiar with Asana, you can find more information here: https://help.asana.com/hc/en-us/articles/14250783001627-How-to-start-using-Asana 
-- [ ] I received and accepted Asana board invite. 
-- [ ] I can access the Innocent Tech MVP Asana board. 
+- [X] I received and accepted Asana board invite. 
+- [X] I can access the Innocent Tech MVP Asana board. 
 
 #### Heroku 
 We will push our changes for testing and production to Heroku. 
@@ -58,9 +58,9 @@ You can find more Heroku dev information here: https://devcenter.heroku.com/
 - [ ] I can access Innocent Tech App Heroku dashboard.
 
 #### Github
-- [ ] Local environment has been set up on your computer
-- [ ] Created Onboarding pull request for review. 
-- [ ] Assigned your PR to Chelsey + Edith  
+- [X] Local environment has been set up on your computer
+- [X] Created Onboarding pull request for review. 
+- [X] Assigned your PR to Chelsey + Edith  
 
 #### Slack 
 One of our communication tools is Slack. You all are familiar with Slack since you all used it during your bootcamp. 
@@ -109,7 +109,7 @@ either version manager installed, and you should install `rbenv`.
 
 *Check-in: I DO NOT have RVM and RBENV installed.* 
 - [ ] Not at all! 
-- [ ] Let me double check.... 
+- [X] Let me double check.... 
 
 _Note: if you have `rvm` installed but would like to switch to `rbenv` (recommended),
 just run the following before installing `rbenv`:_
@@ -174,7 +174,7 @@ You will need Yarn `v1.22.x`, a Node version manager (if you don't already have 
 
 ```sh
 brew install nvm yarn
-nvm install && nvm use # This will install and use the version in the project's `.nvmrc` file
+nvm install && nvm use # This will install and use the version in the project's `.` file
 ```
 
 #### Add credential keys
@@ -195,7 +195,7 @@ rails db:seed
 ```
 
 *Check-in:Verify your db is ready to go*
-- [ ] My db has been set up!  
+- [X] My db has been set up!  
 
 #### Start the Rails server 
 1. Make sure you have tailwindcss:watch running to pick up styling updates.
@@ -211,7 +211,7 @@ rails s
 for git, rubocop, tests, or any other one-off commands you'd like to run.
 
 *Check-in:Were you able to start your server?*
-- [ ] Yes! Ready to go! 
+- [X] Yes! Ready to go! 
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
 #### Open a Rails console and confirm seeds
@@ -229,7 +229,7 @@ rails c
 
 *Check-in: Can you start your rails console?*
 - [ ] No, something is up
-- [ ] Yes! Console started with not issue.
+- [X] Yes! Console started with not issue.
 
 #### Run the linter
 
@@ -238,7 +238,7 @@ rails rubocop
 ```
 
 *Check-in: Can you start your Rails linter?*
-- [ ] Yes! Rubocop ready!
+- [X] Yes! Rubocop ready!
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
 
 #### TailwindCSS 
@@ -278,7 +278,7 @@ Minitest runs the tests in a random order, and outputs a green dot for a success
 
 *Check-in: Are you  looking forward to writing tests?*
 - [ ] Yes, of course!
-- [ ] Its too early to tell 
+- [X] Its too early to tell 
 - [ ] No, not really
 
 #### Deployment Steps (Commit your work)
@@ -292,8 +292,8 @@ Follow the deployment steps listed below.
 When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
 *You only need commit your Readme file with the checklist. No other files are needed!* 
 
-  - [ ] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
-  - [ ] Edit your Readme(select answers to the checklist)
+  - [x] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
+  - [x] Edit your Readme(select answers to the checklist)
   - [ ] Commit your feature branch to the repo
   *Make sure you're only committing your readme*
 
