@@ -40,3 +40,6 @@ config/credentials/*.key
 !/app/assets/builds/.keep
 
 .idea
+
+# Ignore node modules
+/node_modules/
