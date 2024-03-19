@@ -108,8 +108,8 @@ either version manager installed, and you should install `rbenv`.
 **DO NOT INSTALL BOTH RVM AND RBENV ON THE SAME MACHINE OR YOU WILL HAVE A VERY BAD TIME!**
 
 *Check-in: I DO NOT have RVM and RBENV installed.* 
-- [x] Not at all! 
-- [ ] Let me double check.... 
+- [] Not at all! 
+- [x] Let me double check.... 
 
 _Note: if you have `rvm` installed but would like to switch to `rbenv` (recommended),
 just run the following before installing `rbenv`:_
