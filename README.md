@@ -54,8 +54,8 @@ We will push our changes for testing and production to Heroku.
 The Innocent Tech Heroku invite will be sent to your sfg email address.(Please let us know if you do not!)
 You can find more Heroku dev information here: https://devcenter.heroku.com/
 
-- [ ] I received and accepted Innocent Tech App Heroku application invite.
-- [ ] I can access Innocent Tech App Heroku dashboard.
+- [x] I received and accepted Innocent Tech App Heroku application invite.
+- [x] I can access Innocent Tech App Heroku dashboard.
 
 #### Github
 - [x] Local environment has been set up on your computer
@@ -64,9 +64,9 @@ You can find more Heroku dev information here: https://devcenter.heroku.com/
 
 #### Slack 
 One of our communication tools is Slack. You all are familiar with Slack since you all used it during your bootcamp. 
-- [ ] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
+- [x] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
 Software For Good team is excited to have you working with us, and would love to lear more about you all! :D
-- [ ] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
+- [x] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
 
 ## Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
