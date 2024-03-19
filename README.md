@@ -64,9 +64,9 @@ You can find more Heroku dev information here: https://devcenter.heroku.com/
 
 #### Slack 
 One of our communication tools is Slack. You all are familiar with Slack since you all used it during your bootcamp. 
-- [ ] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
+- [x] Accepted invite to Apprentice Slack channel, #sfg-team channel, sfg-watercooler channel, forecastplanning channel
 Software For Good team is excited to have you working with us, and would love to lear more about you all! :D
-- [ ] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
+- [x] Introduce yourself on the #sfg-team Slack channel! Share your name, post a wave, pronouns, and your preferrred/favorite programming tool(Vim,Visual Studio Code, etc.)  
 
 ## Environment Setup
 This setup assumes you are using [Homebrew](https://brew.sh/) on a Mac. 
@@ -108,8 +108,8 @@ either version manager installed, and you should install `rbenv`.
 **DO NOT INSTALL BOTH RVM AND RBENV ON THE SAME MACHINE OR YOU WILL HAVE A VERY BAD TIME!**
 
 *Check-in: I DO NOT have RVM and RBENV installed.* 
-- [ ] Not at all! 
-- [X] Let me double check.... 
+- [X] Not at all! 
+- [ ] Let me double check.... 
 
 _Note: if you have `rvm` installed but would like to switch to `rbenv` (recommended),
 just run the following before installing `rbenv`:_
@@ -294,19 +294,19 @@ When you create your feature branch, follow this naming format for your branch: 
 
   - [x] Create a feature branch from main (follow this naming format: learn-earn-onboarding/[yourname])
   - [x] Edit your Readme(select answers to the checklist)
-  - [ ] Commit your feature branch to the repo
+  - [x] Commit your feature branch to the repo
   *Make sure you're only committing your readme*
 
-  - [ ] Open a Pull request. Change your PR title to: Yourname-Onboarding
-  - [ ] Request a review from Chelsey + Edith on your PR 
+  - [x] Open a Pull request. Change your PR title to: Yourname-Onboarding
+  - [x] Request a review from Chelsey + Edith on your PR 
 
 *Check-in: Do you prefer Front-End development or Back-End development?*
 - [ ] Front end 
 - [ ] Back end 
-- [ ] I'm open to either 
+- [x] I'm open to either 
 
 *Final Check-in: How did local set up go?*
 
-- [ ] Double checked that *all* the onboarding tasks on this readme
-- [ ] I answered all of the check-in questions(including this one!) listed throughout this readme.
-- [ ] I'm ready to submit this readme for review! 
+- [x] Double checked that *all* the onboarding tasks on this readme
+- [x] I answered all of the check-in questions(including this one!) listed throughout this readme.
+- [x] I'm ready to submit this readme for review! 
