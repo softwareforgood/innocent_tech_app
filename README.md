@@ -292,22 +292,22 @@ Follow the deployment steps listed below.
 When you create your feature branch, follow this naming format for your branch: learn-earn-onboarding/[yourname]
 *You only need commit your Readme file with the checklist. No other files are needed!* 
 
-  - [ ] git checkout -b learn-earn-onboarding/[yourname]
+  - [x ] git checkout -b learn-earn-onboarding/[yourname]
 
-  - [ ] Edit your Readme(select answers to the checklist)
-  - [ ] Commit your feature branch to the repo
+  - [x ] Edit your Readme(select answers to the checklist)
+  - [x ] Commit your feature branch to the repo
   *Make sure you're only committing your readme*
 
-  - [ ] Open a Pull request. Change your PR title to: Yourname-Onboarding
-  - [ ] Request a review from Chelsey + Edith on your PR 
+  - [ x] Open a Pull request. Change your PR title to: Yourname-Onboarding
+  - [x ] Request a review from Chelsey + Edith on your PR 
 
 *Check-in: Do you prefer Front-End development or Back-End development?*
 - [ ] Front end 
 - [ ] Back end 
-- [ ] I'm open to either 
+- [ x] I'm open to either 
 
 *Final Check-in: How did local set up go?*
 
-- [ ] Double checked that *all* the onboarding tasks on this readme
-- [ ] I answered all of the check-in questions(including this one!) listed throughout this readme.
-- [ ] I'm ready to submit this readme for review! 
+- [x ] Double checked that *all* the onboarding tasks on this readme
+- [x ] I answered all of the check-in questions(including this one!) listed throughout this readme.
+- [x ] I'm ready to submit this readme for review! 
