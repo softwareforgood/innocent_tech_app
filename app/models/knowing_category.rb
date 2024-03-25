@@ -1,0 +1,2 @@
+class KnowingCategory < ApplicationRecord
+end
