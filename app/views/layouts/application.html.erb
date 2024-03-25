@@ -12,6 +12,11 @@
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
       <!--This is where you will add render lines to render the partials-->
+      <% if current_user %>
+      <%= render 'layouts/sidebar_nav' %>
+      <% end %> 
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <div class="container main-content">
         <%= yield %>
         <%= render 'layouts/sidebar_nav' %>
