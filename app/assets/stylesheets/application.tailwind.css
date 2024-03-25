@@ -11,7 +11,7 @@ tailwind base stylings, components, and utilities*/
 @layer components {
 
   .nav-tab {
-    @apply flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700;
+    @apply flex items-center rounded-lg p-2 text-white hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700;
   }
 
   .tab-title {
