@@ -198,12 +198,18 @@ rails db:seed
 - [ ] My db has been set up!  
 
 #### Start the Rails server 
-
-You can start the rails server using the command given below and visit the site with the URL http://localhost:3000
-
+1. Make sure you have tailwindcss:watch running to pick up styling updates.
+```sh
+rails tailwindcss:watch
+```
+2. Start the rails server using the command given below and visit the site with the URL http://localhost:3000
 ```ruby
 rails s
 ```
+
+**DEV TIP:** Have 3 terminal tabs open: one running tailwindcss:watch, another running the rails server, and the third 
+for git, rubocop, tests, or any other one-off commands you'd like to run.
+
 *Check-in:Were you able to start your server?*
 - [ ] Yes! Ready to go! 
 - [ ] No, I need Chelsey, Edith, or one of my team mates to help me
