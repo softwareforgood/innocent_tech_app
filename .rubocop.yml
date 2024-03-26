@@ -30,5 +30,3 @@ Metrics/MethodLength:
 Rails/Output:
   Exclude:
     - 'db/seeds/**/*.rb'
-Metrics/LineLength:
-  Max: 160
