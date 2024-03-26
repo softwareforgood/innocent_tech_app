@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateKnowingCategories < ActiveRecord::Migration[7.1]
   def change
     create_table :knowing_categories do |t|
