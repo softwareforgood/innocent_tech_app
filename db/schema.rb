@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_13_205340) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_25_173651) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -47,12 +47,31 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_13_205340) do
     t.index ["school_id"], name: "index_educators_on_school_id"
   end
 
+  create_table "focus", force: :cascade do |t|
+    t.string "name"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "schools", force: :cascade do |t|
     t.string "name"
     t.bigint "district_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["district_id"], name: "index_schools_on_district_id"
+  end
+
+  create_table "student_focus", force: :cascade do |t|
+    t.bigint "focus_id", null: false
+    t.bigint "student_id", null: false
+    t.bigint "educator_id", null: false
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["educator_id"], name: "index_student_focus_on_educator_id"
+    t.index ["focus_id"], name: "index_student_focus_on_focus_id"
+    t.index ["student_id"], name: "index_student_focus_on_student_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -67,5 +86,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_13_205340) do
   add_foreign_key "classrooms", "schools"
   add_foreign_key "educators", "schools"
   add_foreign_key "schools", "districts"
+  add_foreign_key "student_focus", "educators"
+  add_foreign_key "student_focus", "focus", column: "focus_id"
+  add_foreign_key "student_focus", "students"
   add_foreign_key "students", "schools"
 end
