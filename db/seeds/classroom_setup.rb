@@ -4,7 +4,14 @@ puts 'seeding data for classroom setup'
 
 district = District.find_or_create_by(name: 'Demo District')
 school = district.schools.find_or_create_by(name: 'Demo School')
-educator = school.educators.find_or_create_by(first_name: 'Emily', last_name: 'Educator')
+user = User.find_or_create_by(email: 'user@example.com') do |user|
+  user.password = 'password'
+end
+
+educator = school.educators.find_or_create_by(first_name: 'Emily', last_name: 'Educator') do |educator|
+  educator.user = user
+end
+
 classroom = school.classrooms.find_or_create_by(name: 'Demo Classroom')
 
 classroom.educators << educator

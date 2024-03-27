@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-class ApplicationController < ActionController::Base
+class ApplicationController < AuthenticatedController
   def index; end
 end
