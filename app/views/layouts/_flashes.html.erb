@@ -1,0 +1,27 @@
+<% flash.each do |name, msg| %>    
+  <% color = case name
+                when 'success'
+                  'green'
+                when 'error'
+                  'red'
+                when 'warning'
+                  'yellow'
+                when 'info'
+                  'blue'
+                end %>
+  <div class="fixed right-0 top-0 mx-2 my-2 w-2/5">
+    <!-- Narrow dark box on top -->
+    <div class="h-2 rounded-t bg-<%= color %>-500"></div>
+
+    <!-- Bottom box for message -->
+    <div class="rounded-b bg-<%= color %>-300 text-black flex flex-wrap items-center justify-between">
+      <div class="flex flex-wrap p-4 items-center">
+        <img src="<%= asset_path("flashes/#{name}.svg") %>" alt="xmark-sharp-regular-1" class="h-5 mx-3">
+        <span>
+          <%= msg %>
+        </span>
+      </div>
+      <img src="<%= asset_path('flashes/xmark.svg') %>" alt="xmark-sharp-regular-1" class="h-5 mx-3 cursor-pointer">
+    </div>
+  </div>
+<% end %>
