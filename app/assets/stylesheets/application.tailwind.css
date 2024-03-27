@@ -2,27 +2,30 @@
 
 /*when we compile the stylings, tailwind will compile 
 tailwind base stylings, components, and utilities*/
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
-/* Tailwind Imports */
-@import "/tailwindcss/base";
-@import "/tailwindcss/components";
-@import "/tailwindcss/utilities";
+/* @layer base
+@layer components
+@layer utilities */
+
+@layer base {
+
+  /*activity component base button*/
+  .btn {
+     /* Base Btn */
+     @apply inline-block rounded-sm bg-gray-700 text-white font-bold text-center py-2 px-4;
+     &:hover{ @apply bg-gray-700 text-white; } 
+  }
 
 
-/* @import "font-awesome"; */
+}
 
-
-/*Components*/
-/* @import './components/activity-components.css';
-@import './components/basic-strategy-pills.css'; */
 
 @layer components {
 
 /*sidebar navigation stylings*/
-
   .nav-tab {
     @apply flex items-center rounded-lg p-2 text-white hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700;
   }
@@ -30,36 +33,5 @@ tailwind base stylings, components, and utilities*/
   .tab-title {
     @apply ms-3 flex-1 whitespace-nowrap;
   }
-
-
-  .btn {
-    /* Base Btn */
-    @apply inline-block rounded-sm bg-it-gray-100 text-black-500 font-bold text-center py-2 px-4;
-    &:hover{ @apply bg-it-gray-200 text-white; }
-
-  &.continue{
-    @apply bg-it-accent-green text-black;
-  }
-
-  &.save{
-    @apply bg-it-accent-blue text-black;
-  }
-
-  &.back{
-    @apply bg-it-accent-red text-black;
-  }
-
-  &.record{
-    @apply bg-it-accent-blue-50 text-black;
-  }
-
-  &.edit{
-    @apply bg-it-accent-yellow text-black;
-  }
-
-
-
-
-}
 
 }
