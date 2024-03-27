@@ -1,29 +1,14 @@
 # frozen_string_literal: true
 
-Focus.create!([{
-    name: 'Connected'
-    active: true
-},
-{   name: 'Belonging'
-    active: true
-},
-{   name: 'Understood'
-    active: true
-},
-{   name: 'Cared For'
-    active: true
-},
-{   name: 'Accepted'
-    active: true
-},
-{   name: 'Seen/Heard'
-    active: true
-},
-{   name: 'Supported'
-    active: true
-},
-{   name: 'Respected'
-    active: true
-}])
+Focuses = [
+  { name: 'Connected' }, { name: 'Respected' }, 
+  { name: 'Belonging' }, { name: 'Accepted' }, 
+  { name: 'Seen/Heard' }, { name: 'Understood' }, 
+  { name: 'Cared For' }, { name: 'Supported' }
+]
 
-puts 'Seeded Focus Model'
+  Focuses.each do |focus|
+    Focus.create(name: focus[:name])
+    puts 'Seeded Focus Model'
+  endgit
+

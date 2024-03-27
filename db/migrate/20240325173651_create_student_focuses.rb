@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-class CreateStudentFocus < ActiveRecord::Migration[7.1]
+class CreateStudentFocuses < ActiveRecord::Migration[7.1]
   def change
-    create_table :student_focus do |t|
+    create_table :student_focuses do |t|
       t.references :focus, null: false, foreign_key: true
       t.references :student, null: false, foreign_key: true
       t.references :educator, null: false, foreign_key: true
-      t.boolean :active
+      t.boolean :active, default: true
 
       t.timestamps
     end
