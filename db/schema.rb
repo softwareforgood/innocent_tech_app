@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_13_205340) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_27_162001) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -55,6 +55,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_13_205340) do
     t.index ["district_id"], name: "index_schools_on_district_id"
   end
 
+  create_table "student_ways_of_being", force: :cascade do |t|
+    t.bigint "way_of_being_id"
+    t.bigint "student_id"
+    t.bigint "educator_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["educator_id"], name: "index_student_ways_of_being_on_educator_id"
+    t.index ["student_id"], name: "index_student_ways_of_being_on_student_id"
+    t.index ["way_of_being_id"], name: "index_student_ways_of_being_on_way_of_being_id"
+  end
+
   create_table "students", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -64,8 +75,19 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_13_205340) do
     t.index ["school_id"], name: "index_students_on_school_id"
   end
 
+  create_table "ways_of_being", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.boolean "active", default: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "classrooms", "schools"
   add_foreign_key "educators", "schools"
   add_foreign_key "schools", "districts"
+  add_foreign_key "student_ways_of_being", "educators"
+  add_foreign_key "student_ways_of_being", "students"
+  add_foreign_key "student_ways_of_being", "ways_of_being"
   add_foreign_key "students", "schools"
 end
