@@ -1,0 +1,33 @@
+/* Base styles for the element that has activity component buttons */
+
+.btn {
+    /* Base Btn */
+    @apply inline-block rounded-sm bg-it-gray-100 text-black-500 font-bold text-center py-2 px-4;
+    &:hover{ @apply bg-it-gray-200 text-white; }
+
+  &.continue{
+    @apply bg-it-accent-green text-black;
+  }
+
+  &.save{
+    @apply bg-it-accent-blue text-black;
+  }
+
+  &.back{
+    @apply bg-it-accent-red text-black;
+  }
+
+  &.record{
+    @apply bg-it-accent-blue-50 text-black;
+  }
+
+  &.edit{
+    @apply bg-it-accent-yellow text-black;
+  }
+
+
+
+
+}
+
+

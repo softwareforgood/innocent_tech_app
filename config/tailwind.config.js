@@ -39,12 +39,29 @@ module.exports = {
         },
         /*accent color hex codes*/
           'it-accent-colors': {
-          'it-accent-purple': '#ED75D3',
-          'it-accent-yellow': '#FFE03D',
-          'it-accent-red': '#FF6961',
-          'it-accent-green': '#5EDA72',
-          'it-accent-blue': '#4493EF'
-        }
+            'it-accent-purple': '#ED75D3',
+            'it-accent-yellow': '#FFE03D',
+            'it-accent-red': '#FF6961',
+            'it-accent-green': '#5EDA72',
+            'it-accent-blue': '#4493EF'
+        },
+        /*light accent colors*/
+        'it-accent-colors-light': {
+          'it-accent-purple-light': '#E4DAFF',
+          'it-accent-yellow-light': '#FFEC8B',
+          'it-accent-red-light': '#FFCAC7',
+          'it-accent-green-light': '#CDF2C3',
+          'it-accent-blue-light': '#B4F2FB'
+        }, 
+        /*knowing categories colors*/
+        'knowing-categories-colors': {
+          'knowing-interests': '#32B021',
+          'knowing-dislikes': '#FFBA08',
+          'knowing-friends': '#F75C03',
+          'knowing-talents': '#0C87CF',
+          'knowing-family': '#642CA9',
+          'knowing-beliefs': '#D00000'
+        },
       },
       typeScale : {
         'prose-xl': '1.25rem' /*20px*/

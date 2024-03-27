@@ -1,0 +1,28 @@
+/* Base styles for the element that has basic strategy pills */
+
+.pill {
+  @apply bg-it-gray-700 py-1 px-3.5 mb-1 rounded-full whitespace-nowrap inline-block capitalize text-center font-bold;
+
+  &.support{
+    @apply bg-it-accent-green text-black; 
+  }
+
+  &.neutral{
+    @apply bg-it-accent-blue text-white;
+  }
+
+  &.hold-back{
+    @apply bg-it-accent-red text-black;
+  }
+
+  &.yes{
+    @apply bg-it-accent-blue;
+  }
+
+  &.no{
+    @apply bg-white text-blue;
+  }
+
+
+}
+
