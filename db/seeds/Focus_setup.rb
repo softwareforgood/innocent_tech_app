@@ -8,7 +8,7 @@ Focuses = [
 ]
 
   Focuses.each do |focus|
-    Focus.create(name: focus[:name])
-    puts 'Seeded Focus Model'
-  endgit
+    Focus.find_or_create_by(name: focus[:name])
+  end
 
+  puts 'Seeded Focus Model'
