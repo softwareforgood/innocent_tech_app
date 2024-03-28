@@ -2,26 +2,37 @@
 <aside id="separator-sidebar" class="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0" aria-label="Sidebar">
   <div class="h-full overflow-y-auto bg-gray-800 px-3 py-4">
     <ul class="space-y-2 font-medium">
-      <li>
+      <li class="flex justify-center py-2 mb-8">
         <!--innocent_tech logo here-->
-        <%# <img src="./assets/images/it_logo.png" alt="innocent_tech_logo" /> %>
+        <img src="<%= asset_path("new_sidebar_icons/logo.png") %>" alt="innocent_tech_logo" class="h-9" />
       </li>
       <li>
         <a href="#" class="nav-tab">
           <!--add my_students icon here-->
+          <img src="<%= asset_path("new_sidebar_icons/my_students_icon.png") %>" alt="my_students_icon" class="h-24 px-5"/>
+
           <i class="fa-brands fa-font-awesome"></i>
-          <span class="tab-title">My Students</span>
+          <span class="tab-title">My<br /> Students</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-tab">
+          <!--my_learning icon here-->
+          <img src="<%= asset_path("new_sidebar_icons/my_learning_icon.png") %>" alt="my_learning_icon" class="h-24"/>
+          <span class="tab-title">My<br /> Learning</span>
         </a>
       </li>
       <li>
         <a href="#" class="nav-tab">
           <!--my_community icon here-->
-          <span class="tab-title">My Community</span>
+          <img src="<%= asset_path("new_sidebar_icons/my_community_icon.png") %>" alt="my_community_icon" class="h-24"/>
+          <span class="tab-title">My<br /> Community</span>
         </a>
       </li>
       <li>
         <a href="#" class="nav-tab">
           <!--my_practice icon here-->
+          <!--Didn't find my_practice icon-->
           <span class="tab-title">My Practice</span>
         </a>
       </li>
