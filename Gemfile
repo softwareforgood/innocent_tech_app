@@ -74,3 +74,5 @@ end
 
 gem 'font-awesome-sass', '~> 6.5.1'
 gem 'tailwindcss-rails', '~> 2.3'
+
+gem 'devise', '~> 4.9'
